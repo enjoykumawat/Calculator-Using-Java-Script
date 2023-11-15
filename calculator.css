@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 400px;
+    border: 3px solid blue;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+}
+input{
+    width: 388px;
+    height: 50px;
+    border: 2px solid green;
+}
+.key{
+    font-size: 20px;
+    width: 128px;
+    color: black;
+    background-color: #f9f9f9;
+    /* border: none; */
+    /* border: 1px solid blue; */
+    border-radius: 12px;
+    
+}
+.num{
+    background-color: bisque;
+}
+.oprator{
+    background-color: orange;
+    border: none;
+}
+.off{
+    background-color: red;
+    border: none;
+}
+.on{
+    background-color: rgb(33, 255, 33);
+    border: none;
+    
+}
+

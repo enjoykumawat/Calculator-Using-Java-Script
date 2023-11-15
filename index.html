@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <center>
+        <h1>Calculator Using Js</h1>
+        <form action="" name="mainform" method="post">
+        <div class="container" >
+            <br>
+            <input type="text" name="result" id="result" style="font-size: 25px;">
+            <br><br>
+            
+            <input type="button" name="1" id="1" value="1" class="key num" onclick="mainform.result.value+='1'">
+            <input type="button" name="2" id="2" value="2" class="key  num" onclick="mainform.result.value+='2'">
+            <input type="button" name="3" id="3" value="3" class="key num" onclick="mainform.result.value+='3'">
+            <br><br>
+            
+            <input type="button" name="4" id="4" value="4" class="key num" onclick="mainform.result.value+='4'">
+            <input type="button" name="5" id="5" value="5" class="key num" onclick="mainform.result.value+='5'">
+            <input type="button" name="6" id="6" value="6" class="key num" onclick="mainform.result.value+='6'">
+            <br><br>
+            
+            <input type="button" name="7" id="7" value="7" class="key num" onclick="mainform.result.value+='7'">
+            <input type="button" name="8" id="8" value="8" class="key num" onclick="mainform.result.value+='8'">
+            <input type="button" name="9" id="9" value="9" class="key num" onclick="mainform.result.value+='9'">
+            <br><br>
+            
+            <input type="button" name="+" id="+" value="+" class="key oprator" onclick="mainform.result.value+='+'">
+            <input type="button" name="0" id="0" value="0" class="key num" onclick="mainform.result.value+='0'">
+            <input type="button" name="-" id="-" value="-" class="key oprator" onclick="mainform.result.value+='-'">
+            <br><br>
+            
+            <input type="button" name="*" id="*" value="*" class="key oprator" onclick="mainform.result.value+='*'">
+            <input type="button" name="/" id="/" value="/" class="key oprator" onclick="mainform.result.value+='/'">
+            <input type="button" name="%" id="%" value="%" class="key oprator" onclick="mainform.result.value+='%'">
+            <br><br>
+            <input type="button" name="on" id="on" value="On" class="key on" onclick="onn()">
+            <input type="button" name="=" id="=" value="=" class="key oprator" onclick="mainform.result.value = eval(mainform.result.value)" >
+            <input type="button" name="off" id="0ff" value="Off" class="key off" onclick="offf()">
+            <br><br>
+           
+            <input type="button" name="clear" id="clear" value="clear"  class="key oprator" style="width: 
+            100px;" onclick="reset(), alert('Values are Reset')">
+            
+            <br><br>
+        </div>
+        </form>
+    </center>
+</body>
+
+<script>
+     function offf(){
+        alert("Calculator Is Off")
+        document.getElementById('1').disabled=true;
+        document.getElementById('2').disabled=true;
+        document.getElementById('3').disabled=true;
+        document.getElementById('4').disabled=true;
+        document.getElementById('5').disabled=true;
+        document.getElementById('6').disabled=true;
+        document.getElementById('7').disabled=true;
+        document.getElementById('8').disabled=true;
+        document.getElementById('9').disabled=true;
+        document.getElementById('0').disabled=true;
+        document.getElementById('+').disabled=true;
+        document.getElementById('-').disabled=true;
+        document.getElementById('*').disabled=true;
+        document.getElementById('/').disabled=true;
+        document.getElementById('%').disabled=true;
+        // document.getElementById('on').disabled=true;
+    }
+
+    function onn(){
+        alert("Calculator is on")
+        document.getElementById('1').disabled=false;
+        document.getElementById('2').disabled=false;
+        document.getElementById('3').disabled=false;
+        document.getElementById('4').disabled=false;
+        document.getElementById('5').disabled=false;
+        document.getElementById('6').disabled=false;
+        document.getElementById('7').disabled=false;
+        document.getElementById('8').disabled=false;
+        document.getElementById('9').disabled=false;
+        document.getElementById('0').disabled=false;
+        document.getElementById('+').disabled=false;
+        document.getElementById('-').disabled=false;
+        document.getElementById('*').disabled=false;
+        document.getElementById('/').disabled=false;
+        document.getElementById('%').disabled=false;
+        // document.getElementById('on').disabled=false;
+    }
+</script>
+
+</html>
